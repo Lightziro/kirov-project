@@ -1,0 +1,23 @@
+@import 'src/styles/vars';
+@import "src/styles/mixins";
+
+.container {
+  @include container-lg;
+  margin-top: 50px;
+
+  .wrapper {
+    flex-direction: column;
+    display: flex;
+    row-gap: 15px;
+  }
+
+  .description {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .empty {
+    opacity: .5;
+    text-align: center;
+  }
+}

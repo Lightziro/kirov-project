@@ -1,0 +1,51 @@
+@import "src/styles/mixins";
+
+
+.container {
+  @include container-lg;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    .infoWrapper {
+      width: 50%;
+
+      .contactsText {
+        text-align: center;
+        font-size: 32px;
+      }
+
+      .line {
+        margin: 10px 0;
+        width: 100%;
+        height: 1px;
+        background-color: #c2c2c2;
+      }
+
+      .columns {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 15px;
+
+        .columnData {
+          display: flex;
+          flex-direction: column;
+          row-gap: 5px;
+
+          .text {
+            font-weight: bold;
+          }
+
+          .description {
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "src/styles/mixins";
+@import "src/styles/vars";
+
+.container {
+  @include container-lg;
+  background-color: $blueColor;
+  border-radius: 25px;
+
+  .wrapper {
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 0;
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 40px;
+      row-gap: 30px;
+      font-size: 14px;
+      color: black;
+
+      .service {
+        padding: 10px;
+        max-width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border: 2px solid #dedede;
+        font-weight: bold;
+        transition: all .2s;
+
+        &:hover {
+          background-color: $purpleColor;
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  margin-top: 40px;
+}

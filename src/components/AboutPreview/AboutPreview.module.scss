@@ -1,0 +1,38 @@
+@import "src/styles/mixins";
+
+.container {
+  width: 100%;
+  background-color: transparent;
+  background-image: url(/images/project.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+  &::after {
+    backdrop-filter: blur(5px);
+    content: "";
+    background-color: rgba(31,31,31,0.6);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .wrapper {
+    z-index: 1;
+    @include container-lg;
+    position: relative;
+
+    .text {
+      color: white;
+      font-weight: bold;
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+}

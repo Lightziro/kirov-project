@@ -1,0 +1,55 @@
+@import "src/styles/vars";
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  height: auto;
+  background-color: $blueColor;
+  position: sticky;
+  box-shadow: 0 6px 50px #dad7e4;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+
+  .phone {
+
+  }
+
+  .logo {
+    width: 80px;
+    height: 50px;
+  }
+
+  .menuWrapper {
+    text-decoration: none;
+    display: flex;
+    column-gap: 25px;
+
+    .menuItem {
+      padding: 10px;
+      color: $blackColor;
+
+      &.active {
+        border-bottom: 1px solid rgb(187, 187, 187);
+      }
+    }
+  }
+  @media screen and (max-width: $lgWidth) {
+    .logo {
+      width: 40px;
+      height: 30px;
+    }
+    .menuWrapper {
+      column-gap: 10px;
+    }
+  }
+  @media screen and (max-width: $mdWidth) {
+    .phone {
+      display: none;
+    }
+    padding: 10px 20px;
+  }
+}

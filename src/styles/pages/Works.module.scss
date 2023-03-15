@@ -1,0 +1,12 @@
+@import "src/styles/mixins";
+
+.container {
+  @include container-lg;
+  margin-top: 50px;
+  .text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}

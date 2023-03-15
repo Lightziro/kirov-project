@@ -1,0 +1,35 @@
+@import "src/styles/mixins";
+
+.container {
+  @include container-lg;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .swiper {
+      .slideWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 0 150px;
+        text-align: center;
+
+        .text {
+          font-size: 18px;
+
+        }
+
+        .count {
+          font-weight: bold;
+          font-size: 24px;
+        }
+      }
+    }
+    .btn {
+      margin-top: 40px;
+    }
+  }
+}

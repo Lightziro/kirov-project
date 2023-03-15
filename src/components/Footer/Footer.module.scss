@@ -1,0 +1,96 @@
+@import 'src/styles/vars';
+
+.footerWrapper {
+  background-color: #F0F5FB;
+  padding: 30px 314px 20px;
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+  margin-top: 40px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .row {
+      column-gap: 58px;
+      //color: $mainGreyFontColor;
+      font-size: 12px;
+      display: flex;
+      justify-content: start;
+      .logo {
+        width: 120px;
+        height: 75px;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        .link {
+          &:hover {
+            text-decoration: #222222;
+          }
+        }
+      }
+    }
+
+    .mainCity {
+      display: flex;
+
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .line {
+    background-color: #A6ACBB;
+  }
+
+  .bottom {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    //color: $mainGreyFontColor;
+
+    .company {
+
+    }
+
+    .links {
+      display: flex;
+      column-gap: 10px;
+
+      .lineLink {
+        height: 100%;
+        width: 1px;
+        background-color: #A6ACBB;
+      }
+    }
+
+    .phone {
+      //color: $mainBlackFontColor;
+    }
+  }
+
+  @media screen and (max-width: $xxlWidth) {
+    padding: 30px 180px 20px;
+  }
+  @media screen and (max-width: $xlWidth) {
+    padding: 30px 70px 20px;
+  }
+  @media screen and (max-width: $lgWidth) {
+    .citiesRow, .bottom {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+    .top {
+      flex-wrap: wrap;
+    }
+    .mainCity {
+      margin-top: 30px;
+    }
+  }
+}
