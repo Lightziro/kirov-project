@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    padding: 20px 0;
+    padding: 20px 20px;
 
     .services {
       display: flex;
@@ -26,9 +26,11 @@
       color: black;
 
       .service {
+        background-color: #FFFFFF;
+        font-size: 18px;
         padding: 10px;
-        max-width: 200px;
-        height: 100px;
+        max-width: 240px;
+        height: 140px;
         display: flex;
         justify-content: start;
         align-items: center;

@@ -9,29 +9,26 @@ const Services = () => {
         <div className="title">Наши услуги</div>
         <div className={styles.services}>
           <div className={styles.service}>
-            Подготовка схемы планировочной организации земельного участка.
+            Подготовке технологических решений
+          </div>
+          <div className={styles.service}>Подготовка архитектурных решений</div>
+          <div className={styles.service}>
+            Подготовка конструктивных решений
           </div>
           <div className={styles.service}>
-            Подготовка архитектурных решений.
+            Подготовка схемы планировочной организации земельного участка
           </div>
           <div className={styles.service}>
-            Подготовка конструктивных решений.
+            Разработке специальных разделов проектной документации
           </div>
           <div className={styles.service}>
-            Подготовке технологических решений.
+            Подготовка проектов мероприятий по охране окружающей среды
           </div>
           <div className={styles.service}>
-            Разработке специальных разделов проектной документации.
+            Подготовка проектов мероприятий по обеспечению пожарной безопасности
           </div>
           <div className={styles.service}>
-            Подготовка проектов мероприятий по охране окружающей среды.
-          </div>
-          <div className={styles.service}>
-            Подготовка проектов мероприятий по обеспечению пожарной
-            безопасности.
-          </div>
-          <div className={styles.service}>
-            Обследование строительных конструкций зданий и сооружений.
+            Обследование строительных конструкций зданий и сооружений
           </div>
         </div>
         <Link className={classNames("baseButton", styles.btn)} href="/services">

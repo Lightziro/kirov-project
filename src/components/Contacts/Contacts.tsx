@@ -7,8 +7,7 @@ const Contacts = () => {
       <div className={styles.wrapper}>
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A3812e62a4db2eb363862b6bd7ac4348d37f1c9b760fd40339ccf9bb0e49b7966&amp;source=constructor"
-          width="50%"
-          height="400"
+          className={styles.map}
           frameBorder="0"
         />
         <div className={styles.infoWrapper}>
@@ -18,7 +17,7 @@ const Contacts = () => {
             <div className={styles.columnData}>
               <div className={styles.text}>Адрес:</div>
               <div className={styles.description}>
-                г.Киров, ул.Сурикова 19, оф.304
+                г. Киров, ул.Сурикова 19, оф.304
               </div>
             </div>
             <div className={styles.columnData}>
