@@ -27,7 +27,12 @@ const Contacts = () => {
             </div>
             <div className={styles.columnData}>
               <div className={styles.text}>Телефон:</div>
-              <div className={styles.description}>8 (8332) 47-24-75</div>
+              <a
+                href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
+                className={styles.description}
+              >
+                {process.env.NEXT_PUBLIC_PHONE_VIEW}
+              </a>
             </div>
             <div className={styles.columnData}>
               <div className={styles.text}>Директор:</div>

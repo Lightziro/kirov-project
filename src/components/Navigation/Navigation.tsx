@@ -24,7 +24,9 @@ const Navigation = () => {
           </Link>
         ))}
       </div>
-      <div className={styles.phone}>Тел: 8 (8332) 47-24-75</div>
+      <a href={`tel:${process.env.NEXT_PUBLIC_PHONE}`} className={styles.phone}>
+        Тел: {process.env.NEXT_PUBLIC_PHONE_VIEW}
+      </a>
     </div>
   );
 };

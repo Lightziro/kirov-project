@@ -15,4 +15,11 @@
   .text {
     font-size: 22px;
   }
+  @media screen and (max-width: 770px) {
+    row-gap: 30px;
+    flex-wrap: wrap;
+    .text {
+      text-align: center;
+    }
+  }
 }

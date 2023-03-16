@@ -33,7 +33,7 @@ const Footer = () => {
           <div className={styles.lineLink} />
           <span>ОГРН: 1104345001100</span>
         </div>
-        <div className={styles.phone}>8 (88332) 47-24-75</div>
+        <div className={styles.phone}>{process.env.NEXT_PUBLIC_PHONE}</div>
       </div>
     </footer>
   );
