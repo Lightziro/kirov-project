@@ -37,12 +37,6 @@
         border: 2px solid #dedede;
         font-weight: bold;
         transition: all .2s;
-
-        &:hover {
-          background-color: $purpleColor;
-          border: none;
-          color: white;
-        }
       }
     }
   }
