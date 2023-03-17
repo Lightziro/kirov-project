@@ -9,7 +9,7 @@ const Services = () => {
         <div className="title">Наши услуги</div>
         <div className={styles.services}>
           <div className={styles.service}>
-            Подготовке технологических решений
+            Подготовка технологических решений
           </div>
           <div className={styles.service}>Подготовка архитектурных решений</div>
           <div className={styles.service}>
@@ -19,7 +19,7 @@ const Services = () => {
             Подготовка схемы планировочной организации земельного участка
           </div>
           <div className={styles.service}>
-            Разработке специальных разделов проектной документации
+            Разработка специальных разделов проектной документации
           </div>
           <div className={styles.service}>
             Подготовка проектов мероприятий по охране окружающей среды
